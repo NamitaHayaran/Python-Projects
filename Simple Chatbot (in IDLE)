@@ -1,0 +1,50 @@
+#!/bin/python3
+
+print("Hello, I'm Rayn  How may I help You")
+choice   =   input("Choose your choie (Python /    Java/     C)=" )
+
+if  choice =="Python":
+    choice1 = input("What you want from Python ?(History/  Training/  Projects) =")
+    if   choice1 == "History":
+        def main():
+            f=open("History.txt","w+")
+            f.write("Python was conceived in the late 1980s[33] by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC language (itself inspired by SETL),[34] capable of exception handling and interfacing with the Amoeba operating system.[8] Its implementation began in December 1989.[35] Van Rossum continued as Python's lead developer until July 12, 2018, when he announced his permanent vacation  from his responsibilities as Python's Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker.[36] In January, 2019, active Python core developers elected Brett Cannon, Nick Coghlan, Barry Warsaw, Carol Willing and Van Rossum to a five-member  Steering Council to lead the project")
+            f.close()
+            f=open("History.txt","r")
+            if  f.mode == "r":
+                contents = f.read()
+                print(contents)
+        if __name__ =="__main__":
+                main()
+                
+    elif choice1 =="Training":
+        print("T")
+    elif choice1 =="Projects":
+        print("P")
+    else:
+        print("Sorry!")
+        
+elif choice =="Java":
+    choice1 = input("What you want from Java?(Histrory/  Training/  Projects) =")
+    if   choice1 == "History":
+        print("H")
+    elif choice1 =="Training":
+        print("T")
+    elif choice1 =="Projects":
+        print("P")
+    else:
+        print("Sorry!")
+
+elif choice =="C":
+    choice1 = input("What you want from C?(Histrory/  Training/  Projects) =")
+    if   choice1 == "History":
+        print("H")
+    elif choice1 =="Training":
+        print("T")
+    elif choice1 =="Projects":
+        print("P")
+    else:
+        print("Sorry!")
+        
+else:
+    print("Sorry!")
